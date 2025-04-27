@@ -32,9 +32,9 @@ class HomePage extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
-                    children: [Container(margin:EdgeInsets.only(bottom: 11), height: 200,width: 300,
+                    children: [Container(margin:EdgeInsets.only(bottom: 11,right:11 ), height: 200,width: 300,
                       color: Colors.blue,
-                      child: Image.asset('assets/images/Ayuda.png')),Container(margin:EdgeInsets.only(bottom: 11), height: 200,width: 300,
+                      child: Image.asset('assets/images/Ayuda.png')),Container(margin:EdgeInsets.only(bottom: 11,right: 11), height: 200,width: 300,
                         color: Colors.blue,
                         child: Image.asset('assets/images/rounak.jpg')),Container(margin:EdgeInsets.only(bottom: 11), height: 200,width: 300,
                         color: Colors.blue,
