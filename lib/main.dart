@@ -22,19 +22,45 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: const Text('Home Page')),
-        body:Center(
-          child: InkWell(
-            onTap: (){print("taped container");
-            },
-            child: Container(
-              height: 100,width: 200,color: Colors.blue,
-              child: Center(child: InkWell(
-                onTap:(){ print('text');},
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
 
-
-
-                  child: Text('hi',style: TextStyle(fontSize: 40),))),
-
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [Container(margin:EdgeInsets.only(bottom: 11), height: 200,width: 300,
+                      color: Colors.blue,
+                      child: Image.asset('assets/images/Ayuda.png')),Container(margin:EdgeInsets.only(bottom: 11), height: 200,width: 300,
+                        color: Colors.blue,
+                        child: Image.asset('assets/images/rounak.jpg')),Container(margin:EdgeInsets.only(bottom: 11), height: 200,width: 300,
+                        color: Colors.blue,
+                        child: Image.asset('assets/images/Ayuda.png')),]
+                  ),
+                ),
+              ),
+                Container(margin:EdgeInsets.only(bottom: 11),height: 200,width: 200,
+                color: Colors.green,
+                child: Center(child: Text('1',style: TextStyle(fontSize: 50, color: Colors.black87))),),
+                Container(margin:EdgeInsets.only(bottom: 11),height: 200,width: 200,
+                color: Colors.red,
+                child: Center(child: Text('1',style: TextStyle(fontSize: 50, color: Colors.black87))),),
+                Container(margin:EdgeInsets.only(bottom: 11),height: 200,width: 200,
+                color: Colors.yellow,
+                child: Center(child: Text('1',style: TextStyle(fontSize: 50, color: Colors.black87))),),
+                Container(margin:EdgeInsets.only(bottom: 11),height: 200,width: 200,
+                color: Colors.lime,
+                child: Center(child: Text('1',style: TextStyle(fontSize: 50, color: Colors.black87))),),
+                Container(margin:EdgeInsets.only(bottom: 11),height: 200,width: 200,
+                  color: Colors.red,
+                  child: Center(child: Text('1',style: TextStyle(fontSize: 50, color: Colors.black87))),),
+                Container(margin:EdgeInsets.only(bottom: 11),height: 200,width: 200,
+                  color: Colors.green,
+                  child: Center(child: Text('1',style: TextStyle(fontSize: 50, color: Colors.black87))),),
+              ],
             ),
           ),
         )
